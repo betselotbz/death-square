@@ -1,0 +1,4 @@
+<app-laser-cannon></app-laser-cannon>
+<div class="death-square-container">
+    <app-turret *ngFor="let num of turretArray; index as i" [turretNumber]="i + 1"></app-turret>
+</div>
