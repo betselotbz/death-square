@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tie-fighter.component.css']
 })
 export class TieFighterComponent {
+  tieFighters: any[] = new Array(15);
 
 }

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./turret.component.css']
 })
 export class TurretComponent {
-
+  turrets: any[] = new Array(16);
 }

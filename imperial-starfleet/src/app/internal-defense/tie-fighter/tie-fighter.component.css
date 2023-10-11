@@ -1,11 +1,14 @@
-.tie-fighter-container {
-    top: 1100px;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-  }
 
-  .tie-fighter-container img {
-    margin: 5px;
-  }
+
+.app-tie-fighter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.app-tie-fighter img {
+  margin: 5px;
+  
+}
+
+
