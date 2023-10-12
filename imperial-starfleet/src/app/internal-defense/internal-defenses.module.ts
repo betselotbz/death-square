@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TurretComponent } from './turret/turret.component';
 import { LaserCannonComponent } from './laser-cannon/laser-cannon.component';
 import { DeathSquareComponent } from './death-square/death-square.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -18,7 +19,8 @@ import { DeathSquareComponent } from './death-square/death-square.component';
   exports: [
     DeathSquareComponent,
     TurretComponent,
-    LaserCannonComponent
+    LaserCannonComponent,
+    RouterModule,
   ]
 })
 export class InternalDefensesModule { }

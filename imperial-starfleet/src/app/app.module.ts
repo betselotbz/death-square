@@ -10,6 +10,10 @@ import { StarDestroyerComponent } from './star-destroyer/star-destroyer.componen
 import { IntervalDirective } from './interval.directive';
 import { InternalDefensesModule } from './internal-defense/internal-defenses.module';
 import { ExternalDefensesModule } from './external-defense/external-defenses/external-defenses.module';
+import { InfoWindowComponent } from './info-window/info-window.component';
+import { AppRoutingModule } from './app-routing/app-routing.module';
+
+
 
 @NgModule({
   declarations: [
@@ -21,12 +25,14 @@ import { ExternalDefensesModule } from './external-defense/external-defenses/ext
     // TieFighterComponent,
    
    
-    IntervalDirective
+    IntervalDirective,
+    InfoWindowComponent
   ],
   imports: [
     InternalDefensesModule,
     ExternalDefensesModule,
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
