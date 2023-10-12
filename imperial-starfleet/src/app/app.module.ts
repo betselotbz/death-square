@@ -12,27 +12,23 @@ import { InternalDefensesModule } from './internal-defense/internal-defenses.mod
 import { ExternalDefensesModule } from './external-defense/external-defenses/external-defenses.module';
 import { InfoWindowComponent } from './info-window/info-window.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    // DeathSquareComponent,
-    // TurretComponent,
-    // LaserCannonComponent,
-
-    // TieFighterComponent,
-   
-   
     IntervalDirective,
-    InfoWindowComponent
+    InfoWindowComponent,
+    
   ],
   imports: [
     InternalDefensesModule,
     ExternalDefensesModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

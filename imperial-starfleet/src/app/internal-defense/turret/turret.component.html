@@ -1,6 +1,7 @@
 <div class="turrets">
-        <a routerLink="/info">
-                <img src="/assets/images/turret.png" alt="Turret" *ngFor="let turret of turrets">
-              </a>       
+              <a [routerLink]="['/info', turretNumber]"> 
+                <img src="/assets/images/turret.png" alt="turret">
+              </a>
+                   
       </div>
       

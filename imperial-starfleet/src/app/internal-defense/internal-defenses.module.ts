@@ -14,7 +14,7 @@ import { RouterModule } from '@angular/router';
     LaserCannonComponent
   ],
   imports: [
-    CommonModule
+    CommonModule, RouterModule
   ],
   exports: [
     DeathSquareComponent,
