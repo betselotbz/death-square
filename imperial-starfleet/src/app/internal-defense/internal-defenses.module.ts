@@ -14,6 +14,11 @@ import { DeathSquareComponent } from './death-square/death-square.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    DeathSquareComponent,
+    TurretComponent,
+    LaserCannonComponent
   ]
 })
 export class InternalDefensesModule { }

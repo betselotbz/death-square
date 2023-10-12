@@ -9,6 +9,12 @@ import { StarDestroyerComponent } from 'src/app/star-destroyer/star-destroyer.co
   declarations: [TieFighterComponent, StarDestroyerComponent],
   imports: [
     CommonModule
+
+  ],
+  exports: [
+    TieFighterComponent,
+    StarDestroyerComponent
   ]
 })
+
 export class ExternalDefensesModule { }
