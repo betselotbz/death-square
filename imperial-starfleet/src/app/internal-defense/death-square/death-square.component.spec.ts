@@ -1,6 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DeathSquareComponent } from './death-square.component';
+import { LaserCannonComponent } from '../laser-cannon/laser-cannon.component';
+import { TurretComponent } from '../turret/turret.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('DeathSquareComponent', () => {
   let component: DeathSquareComponent;
@@ -8,7 +11,8 @@ describe('DeathSquareComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DeathSquareComponent]
+      declarations: [DeathSquareComponent, LaserCannonComponent, TurretComponent],
+      imports: [RouterTestingModule],
     });
     fixture = TestBed.createComponent(DeathSquareComponent);
     component = fixture.componentInstance;

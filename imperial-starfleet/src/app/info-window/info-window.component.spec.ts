@@ -1,6 +1,8 @@
+// info-window.component.spec.ts
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { InfoWindowComponent } from './info-window.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('InfoWindowComponent', () => {
   let component: InfoWindowComponent;
@@ -8,8 +10,10 @@ describe('InfoWindowComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [InfoWindowComponent]
-    });
+      declarations: [InfoWindowComponent],
+      imports: [RouterTestingModule, HttpClientTestingModule],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(InfoWindowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -17,5 +21,9 @@ describe('InfoWindowComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have a findTurret() function to get data from the data banks', () => {
+    expect(typeof component.findTurret).toBe('function');
   });
 });

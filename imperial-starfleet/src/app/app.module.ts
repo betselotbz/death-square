@@ -13,6 +13,7 @@ import { ExternalDefensesModule } from './external-defense/external-defenses/ext
 import { InfoWindowComponent } from './info-window/info-window.component';
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router'; // Import RouterModule here
 
 
 
@@ -28,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http';
     ExternalDefensesModule,
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
